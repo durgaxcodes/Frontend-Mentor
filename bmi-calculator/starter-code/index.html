@@ -36,7 +36,7 @@
             <input
               type="radio"
               id="metric"
-              name="metric"
+              name="radio"
               value="metric"
               class="metric-radio"
             />
@@ -46,7 +46,7 @@
             <input
               type="radio"
               id="imperial"
-              name="imperial"
+              name="radio"
               value="imperial"
               class="imperial-radio"
             />
@@ -73,15 +73,14 @@
             </div>
           </div>
         </div>
-        <div class="calculation">
+        <div class="calculation" id="calculation">
           <div class="intro-msg">
-            <h4>Welcome!</h4>
-            <p>
+            <h4 id="intro">Welcome!</h4>
+            <p id="bmi-para">
               Enter your height and weight and you'll see your BMI result here
             </p>
           </div>
-          <div class="bmi"></div>
-          <div class="bmi-msg"></div>
+          <button id="reset">Reset</button>
         </div>
       </div>
     </section>
@@ -102,6 +101,10 @@
           activity, ideally about 30 minutes daily for five days a week.
         </p>
       </div>
+      <img
+        src="./assets/images/pattern-curved-line-left.svg"
+        class="right-curve"
+      />
     </section>
     <section class="bmi-maintainance">
       <div class="maintainance-container">
@@ -132,7 +135,7 @@
       </div>
     </section>
     <section class="bmi-limitation">
-      <div class="limitation description">
+      <div class="limitation-description">
         <h3>Limitations of BMI</h3>
 
         <p>
@@ -142,46 +145,73 @@
           beneficial to use.
         </p>
       </div>
-      <div class="category-container">
-        <div class="category">
-          <h6>Gender</h6>
+      <div class="category-container flex">
+        <div class="category gender-category">
+          <div class="gender">
+            <img src="./assets/images/icon-gender.svg" class="gender-img" />
+            <h6>Gender</h6>
+          </div>
           <p>
             The development and body fat composition of girls and boys vary with
             age. Consequently, a child's age and gender are considered when
             evaluating their BMI.
           </p>
         </div>
-        <div class="category">
-          <h6>Age</h6>
-          <p>
-            In aging individuals, increased body fat and muscle loss may cause
-            BMI to underestimate body fat content.
-          </p>
+        <div class="categories-container-1">
+          <div class="category age-category">
+            <div class="gender">
+              <img src="./assets/images/icon-age.svg" class="age-img" />
+              <h6>Age</h6>
+            </div>
+            <p>
+              In aging individuals, increased body fat and muscle loss may cause
+              BMI to underestimate body fat content.
+            </p>
+          </div>
+          <div class="category muscle-category">
+            <div class="gender">
+              <img src="./assets/images/icon-muscle.svg" class="muscle-img" />
+              <h6>Muscle</h6>
+            </div>
+            <p>
+              BMI may misclassify muscular individuals as overweight or obese,
+              as it doesn't differentiate muscle from fat.
+            </p>
+          </div>
         </div>
-        <div class="category">
-          <h6>Muscle</h6>
-          <p>
-            BMI may misclassify muscular individuals as overweight or obese, as
-            it doesn't differentiate muscle from fat.
-          </p>
-        </div>
-        <div class="category">
-          <h6>Pregnancy</h6>
-          <p>
-            Expectant mothers experience weight gain due to their growing baby.
-            Maintaining a healthy pre-pregnancy BMI is advisable to minimise
-            health risks for both mother and child.
-          </p>
-        </div>
-        <div class="category">
-          <h6>Race</h6>
-          <p>
-            Certain health concerns may affect individuals of some Black and
-            Asian origins at lower BMIs than others. To learn more, it is
-            advised to discuss this with your GP or practice nurse.
-          </p>
+        <div class="categories-container-2">
+          <div class="category pregnancy-category">
+            <div class="gender">
+              <img
+                src="./assets/images/icon-pregnancy.svg"
+                class="pregnancy-img"
+              />
+              <h6>Pregnancy</h6>
+            </div>
+            <p>
+              Expectant mothers experience weight gain due to their growing
+              baby. Maintaining a healthy pre-pregnancy BMI is advisable to
+              minimise health risks for both mother and child.
+            </p>
+          </div>
+          <div class="category race-category">
+            <div class="gender">
+              <img src="./assets/images/icon-race.svg" class="race-img" />
+              <h6>Race</h6>
+            </div>
+            <p>
+              Certain health concerns may affect individuals of some Black and
+              Asian origins at lower BMIs than others. To learn more, it is
+              advised to discuss this with your GP or practice nurse.
+            </p>
+          </div>
         </div>
       </div>
+      <img
+        src="./assets/images/pattern-curved-line-right.svg"
+        class="left-curve"
+      />
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
