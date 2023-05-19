@@ -29,7 +29,7 @@
           </p>
         </div>
       </div>
-      <div class="calculator-container">
+      <div class="calculator-container" id="calculator-container">
         <h3 class="calculator-heading">Enter your details below</h3>
         <div class="radio-btns">
           <div class="btns btn-metric">
@@ -40,7 +40,9 @@
               value="metric"
               class="metric-radio"
             />
-            <label for="metric" class="metric-label">Metric</label>
+            <label for="metric" class="metric-label" aria-disabled="true"
+              >Metric</label
+            >
           </div>
           <div class="btns btn-imperial">
             <input
@@ -49,11 +51,12 @@
               name="radio"
               value="imperial"
               class="imperial-radio"
+              disabled
             />
             <label for="imperial" class="imperial-label">Imperial</label>
           </div>
         </div>
-        <div class="input-wrapper">
+        <div class="input-wrapper" id="input-wrapper-metric">
           <div class="height-wrapper">
             <label for="height" class="label">Height</label>
             <div class="input-text-wrapper">
@@ -212,6 +215,58 @@
         class="left-curve"
       />
     </section>
+    <div class="input-wrapper-imperial" id="input-wrapper-imp">
+      <div class="height-wrapper-imperial">
+        <label for="height-imperial" class="label">Height</label>
+        <div class="wrapper-imperial">
+          <div class="input-text-wrapper-imperial imperial-1">
+            <span
+              ><input
+                type="text"
+                id="height-imperial-ft"
+                name="height"
+                class="input-txt-imperial"
+            /></span>
+            <span class="units-ft">ft</span>
+          </div>
+          <div class="input-text-wrapper-imperial">
+            <span
+              ><input
+                type="text"
+                id="height-imperial-in"
+                name="height"
+                class="input-txt-imperial"
+            /></span>
+            <span class="units-in">in</span>
+          </div>
+        </div>
+      </div>
+      <div class="weight-wrapper-imperial">
+        <label for="weight-imperial" class="label">Weight</label>
+        <div class="wrapper-imperial">
+          <div class="input-text-wrapper-imperial imperial-1">
+            <span
+              ><input
+                type="text"
+                id="weight-imperial"
+                name="weight"
+                class="input-txt-imperial"
+            /></span>
+            <span class="units">st</span>
+          </div>
+          <div class="input-text-wrapper-imperial">
+            <span
+              ><input
+                type="text"
+                id="weight-imperial"
+                name="weight"
+                class="input-txt-imperial"
+            /></span>
+            <span class="units">lbs</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
