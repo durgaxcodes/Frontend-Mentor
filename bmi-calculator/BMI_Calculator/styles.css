@@ -425,13 +425,13 @@ body {
   padding: 15px 55px;
   color: #253347;
   position: relative;
-  bottom: -60px;
+  bottom: -40px;
   left: -30px;
   border-radius: 10px;
   background-color: #345ff6;
   color: #ffffff;
   border-style: none;
-  display: none;
+  visibility: hidden;
 }
 
 @media (min-width: 1450px) {
@@ -476,4 +476,141 @@ body {
   .bmi-limitation {
     margin-bottom: 300px;
   }
+}
+
+.input-wrapper-imperial {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  margin-bottom: 32px;
+  position: absolute;
+  top: 296px;
+  left: 766px;
+  visibility: hidden;
+}
+
+.height-wrapper-imperial {
+  width: 238px;
+  height: 98px;
+}
+
+.label {
+  font-size: 16px;
+  color: #5e6e85;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.input-text-wrapper-imperial {
+  width: 238px;
+  height: 69px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+}
+
+.input-text-wrapper-weight,
+.label-weight {
+  margin-left: 24px;
+}
+
+.input-txt-imperial {
+  width: 131px;
+  height: 100%;
+  border-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.input-txt-imperial:focus {
+  outline: none;
+}
+
+.units-ft,
+.units-in {
+  width: 35px;
+  height: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 20px;
+  color: #345ff6;
+}
+
+.wrapper-imperial {
+  display: flex;
+}
+
+.imperial-1 {
+  margin-right: 24px;
+}
+
+.height-wrapper-imperial {
+  width: 238px;
+  height: 98px;
+}
+
+.label {
+  font-size: 16px;
+  color: #5e6e85;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.input-text-wrapper-imperial {
+  width: 238px;
+  height: 69px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d8e2e7;
+  border-radius: 12px;
+}
+
+.input-text-wrapper-weight,
+.label-weight {
+  margin-left: 24px;
+}
+
+.input-txt-imperial {
+  width: 131px;
+  height: 100%;
+  border-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.input-txt-imperial:focus {
+  outline: none;
+}
+
+.units-ft,
+.units-in {
+  width: 35px;
+  height: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 20px;
+  color: #345ff6;
+}
+
+.wrapper-imperial {
+  display: flex;
+}
+
+.imperial-1 {
+  margin-right: 24px;
+}
+
+.weight-wrapper-imperial {
+  width: 100%;
+  height: 98px;
+  position: relative;
+  top: 100px;
+  left: -238px;
 }
