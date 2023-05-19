@@ -8,16 +8,37 @@ const intro = document.getElementById("intro");
 const bmiBox = document.getElementById("bmi-box");
 const bmiMsg = document.getElementById("bmiMsg");
 const bmiPara = document.getElementById("bmi-para");
+const inputMetric = document.getElementById("input-wrapper-metric");
+const inputImp = document.getElementById("input-wrapper-imp");
+const calcContainer = document.getElementById("calculator-container");
+const calculation = document.getElementById("calculation");
+const reset = document.getElementById("reset");
+const heightImperialFt = document.getElementById("height-imperial-ft");
+const heightImperialIn = document.getElementById("height-imperial-in");
+
 intro.style.fontSize = "20px";
 intro.style.color = "white";
 
-metricBtn.addEventListener("click", function () {
-  console.log("clicked");
+imperialBtn.addEventListener("click", function () {
+  inputMetric.style.visibility = "hidden";
+  inputImp.style.visibility = "visible";
+  inputImp.style.marginTop = "20px";
+  calcContainer.style.height = "540px";
+  calculation.style.marginTop = "130px";
 });
 
-let bmivalue = () => {
+metricBtn.addEventListener("click", function () {
+  inputMetric.style.visibility = "visible";
+  inputImp.style.visibility = "hidden";
+  calcContainer.style.height = "484px";
+  calculation.style.marginTop = "32px";
+  intro.textContent = "Calculate";
+});
+
+let bmivalueMetric = () => {
   const weightnum = Number(weight.value);
   const heightnum = Number(height.value);
+  reset.style.visibility = "visible";
   bmi = (weightnum / ((heightnum / 100) * (heightnum / 100))).toFixed(2);
   if (bmi < 18.5) {
     intro.textContent = `Your BMI is... 
@@ -38,4 +59,14 @@ let bmivalue = () => {
   }
 };
 
-calculate.addEventListener("click", bmivalue);
+reset.addEventListener("click", function () {
+  weight.value = 0;
+  height.value = 0;
+  weight.textContent = 0;
+  height.textContent = 0;
+  intro.textContent = "Calculate";
+  bmiPara.textContent =
+    "Enter your height and weight and you'll see your BMI result here";
+});
+
+calculate.addEventListener("click", bmivalueMetric);
