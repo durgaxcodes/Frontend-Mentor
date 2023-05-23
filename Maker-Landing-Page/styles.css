@@ -511,9 +511,29 @@ button {
   .footer {
     top: 2628px;
     margin-top: 300px;
-    left: 250px;
+    left: 380px;
   }
   .footer-heading {
     font-size: 28px;
+  }
+
+  .footer-container {
+    width: 476px;
+    height: 110px;
+  }
+}
+
+/*Mobile    */
+@media only screen and (max-width: 420px) {
+  body {
+    width: 350px;
+    height: 3852px;
+    background-color: #3ee9e5;
+  }
+  .facility {
+    width: 327px;
+    text-align: center;
+    background-color: #080c20;
+    margin: 0;
   }
 }
