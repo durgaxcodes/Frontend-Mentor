@@ -37,7 +37,7 @@ header {
   background-image: url(./assets/illustration-hero-left.svg);
   width: 408px;
   height: 459px;
-  object-fit: contain;
+  object-fit: cover;
   position: absolute;
   left: -53px;
 }
@@ -86,6 +86,8 @@ header {
   height: 444px;
   position: absolute;
   right: -53px;
+  background-image: url(./assets/illustration-hero-right.svg);
+  object-fit: cover;
 }
 
 .facilities {
@@ -334,4 +336,184 @@ button {
   color: #080c20;
   background-color: #3ee9e5;
   border-style: none;
+  margin-left: 12px;
+}
+
+.scroll:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-2px);
+}
+
+.btn:hover:hover,
+.email:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #080c20;
+  border: 2px solid #3ee9e5;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.btn:hover {
+  transform: translateY(2px);
+}
+
+.facility:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+}
+.facility:active {
+  transform: translateY(5px);
+}
+
+@media only screen and (min-width: 1450px) {
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .navbar {
+    position: relative;
+    left: 0;
+  }
+
+  .facilities {
+    position: static;
+    margin-top: 500px;
+  }
+  .pricing-plans {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+  .plan-categories {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+  .paid,
+  .free {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+  }
+  .footer {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 820px) {
+  body {
+    width: 768px;
+    height: 2873px;
+  }
+
+  .navbar {
+    left: 79px;
+  }
+
+  header {
+    width: 1108px;
+    height: 357px;
+    top: 160px;
+    left: 169px;
+  }
+  .footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+  .heading-box {
+    width: 457px;
+    left: 285px;
+    height: 268px;
+    top: 170px;
+  }
+  .hero-left {
+    width: 314px;
+    height: 356px;
+    top: 160px;
+    left: -169px;
+  }
+  .hero-right {
+    top: 160px;
+    width: 317px;
+    height: 356px;
+    left: 622px;
+  }
+
+  .heading-main {
+    font-size: 32px;
+  }
+
+  .heading-para {
+    width: 457px;
+  }
+  .scroll {
+    top: 270px;
+    left: 210px;
+  }
+  .facilities {
+    flex-direction: column;
+    width: 573px;
+    height: 614px;
+    top: 500px;
+    left: 279px;
+    position: relative;
+  }
+  .facility {
+    display: flex;
+    width: 515px;
+    height: 124px;
+    margin-bottom: 60px;
+    position: static;
+  }
+  .facility-img-container {
+    width: 120px;
+    height: 124px;
+  }
+  .facility-description {
+    width: 340px;
+    height: 86px;
+  }
+  .passion {
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+
+  .pricing-plans {
+    left: 389px;
+    margin-top: 50px;
+  }
+  .plan-categories {
+    flex-direction: column;
+    left: 440px;
+    margin-top: 50px;
+  }
+
+  .category-1 {
+    margin-bottom: 70px;
+  }
+  .footer {
+    top: 2628px;
+    margin-top: 300px;
+    left: 250px;
+  }
+  .footer-heading {
+    font-size: 28px;
+  }
 }
