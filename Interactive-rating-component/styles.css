@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1400px;
+  height: 800px;
+  background-color: #131518;
+  font-family: "Overpass", sans-serif;
+}
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 412px;
+  height: 436px;
+  position: absolute;
+  top: 195px;
+  left: 514px;
+  background-image: linear-gradient(to bottom, #151a1f, #262e38);
+  border-radius: 30px;
+}
+
+.content {
+  width: 341px;
+  height: 90%;
+  margin: 20px auto;
+}
+
+.img-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #262e38;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.star {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.para-1 {
+  font-size: 18px;
+  line-height: 150%;
+  color: #969fad;
+  margin-bottom: 20px;
+}
+
+.num-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 341px;
+  height: 51px;
+  margin-bottom: 40px;
+}
+
+.num {
+  width: 51px;
+  height: 51px;
+  background-color: #262e38;
+  border-radius: 50%;
+  border-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #969fad;
+  font-weight: 700;
+}
+
+.btn {
+  width: 341px;
+  height: 45px;
+  font-size: 20px;
+  background-color: #fc7614;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-radius: 22.5px;
+}
+
+.container-2 {
+  width: 412px;
+  height: 436px;
+  position: absolute;
+  top: 195px;
+  left: 514px;
+  background-image: linear-gradient(to bottom, #151a1f, #262e38);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.content-2 {
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.selection {
+  width: 193px;
+  height: 32px;
+  border-radius: 22.5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #262e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fc7614;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.para-2 {
+  font-size: 18px;
+  line-height: 150%;
+  color: #969fad;
+  margin-bottom: 20px;
+}
+
+.num:hover {
+  background-color: #7c8798;
+  color: #ffffff;
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.num:active {
+  background-color: #fc7614;
+  color: #ffffff;
+  cursor: pointer;
+  transform: translateY(2px);
+  transition: all 0.1s ease-out;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #fc7614;
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.selection:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
