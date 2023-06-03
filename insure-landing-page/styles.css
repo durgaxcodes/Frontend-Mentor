@@ -325,7 +325,7 @@ footer {
     height: 100%;
   }
   .logo {
-    left: 250px;
+    left: 230px;
   }
   .navbar {
     width: 100%;
@@ -337,11 +337,16 @@ footer {
     width: 100%;
   }
   .intro-box {
-    left: 500px;
+    left: 230px;
   }
   .bar {
-    left: 500px;
+    left: 230px;
   }
+
+  .bar-2 {
+    left: 230px;
+  }
+
   .hero-desktop {
     left: 1400px;
   }
@@ -384,4 +389,5 @@ footer {
     width: 100%;
   }
 }
+
 
