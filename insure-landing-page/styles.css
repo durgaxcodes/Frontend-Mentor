@@ -319,3 +319,69 @@ footer {
 .icon:hover {
   cursor: pointer;
 }
+@media (min-width: 1450px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .logo {
+    left: 250px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .nav-list {
+    left: 1500px;
+  }
+  .intro {
+    width: 100%;
+  }
+  .intro-box {
+    left: 500px;
+  }
+  .bar {
+    left: 500px;
+  }
+  .hero-desktop {
+    left: 1400px;
+  }
+  .perks-container {
+    width: 100%;
+    left: 0px;
+  }
+  .perks-title {
+    position: relative;
+    left: 230px;
+  }
+  .perks {
+    width: 80%;
+    margin-left: 240px;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .perk {
+    margin-right: 30px;
+    width: 30%;
+  }
+
+  .work-container {
+    width: 85%;
+    left: 150px;
+  }
+
+  footer {
+    width: 100%;
+  }
+  .footer-container {
+    width: 80%;
+  }
+
+  .footer-bar {
+    width: 100%;
+  }
+  .footer-links-wrapper {
+    width: 100%;
+  }
+}
+
